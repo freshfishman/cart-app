@@ -1,5 +1,5 @@
-####` bugs--collections`
-#####1.`eslint--bug`
+# ` bugs--collections`<br>
+## 1.`eslint--bug`
 由于项目是按照`create-react-app`生成的，在使用之前试着按照`create-react-app [project.name] --script-version custom-react-scripts`命令生成，出现了Eslint版本错误即eslint 版本不匹配
 ````
 The react-scripts package provided by Create React App requires a dependency:
@@ -7,8 +7,8 @@ The react-scripts package provided by Create React App requires a dependency:
 Dont try to install it manually: your package manager does it automatically.
 However, a different version of eslint was detected higher up in the tree:
 ````
-在卸载`custom-react-scripts`后可以正常启动项目
-#####2.自定义组件中借口暴露问题
+在卸载`custom-react-scripts`后可以正常启动项目<br>
+## 2.自定义组件中借口暴露问题
 ```
 目录结构
 ├── conponents
