@@ -7,7 +7,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 
 ReactDOM.render(
 	<Router>
-		
+		<Home></Home>
 	</Router>
 	, document.getElementById('root'));
 
