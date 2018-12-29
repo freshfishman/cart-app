@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
-import App from './components/App';
+import App from './components/App';       //引入主组件
 import * as serviceWorker from './serviceWorker';
 import 'antd-mobile/dist/antd-mobile.css';
 

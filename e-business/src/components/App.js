@@ -1,15 +1,15 @@
 import React from 'react';
 import { TabBar } from 'antd-mobile';
 import { Route } from 'react-router-dom';
-import { Home, Products,Carts } from './index'
+import { Home,Products,Carts } from './index'
 
 export default class TabBarExample extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		selectedTab: 'blueTab',  //默认选中的标签
-		hidden: false,           //标签栏是否隐藏
-		fullScreen: true,        //是否全屏
+			selectedTab: 'blueTab',  //默认选中的标签
+			hidden: false,           //标签栏是否隐藏
+			fullScreen: true,        //是否全屏
 		};
 	}
 	render() {
@@ -49,58 +49,58 @@ export default class TabBarExample extends React.Component {
 				</TabBar.Item>
 				<TabBar.Item
 					icon={
-					<div style={{
-						width: '22px',
-						height: '22px',
-						background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat' }}
-					/>
+						<div style={{
+							width: '22px',
+							height: '22px',
+							background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat' }}
+						/>
 					}
 					selectedIcon={
-					<div style={{
-						width: '22px',
-						height: '22px',
-						background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat' }}
-					/>
+						<div style={{
+							width: '22px',
+							height: '22px',
+							background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat' }}
+						/>
 					}
 					title="产品"
 					key="products"
 					badge={'new'}
 					selected={this.state.selectedTab === 'redTab'}
 					onPress={() => {
-					this.setState({
-						selectedTab: 'redTab',
-					});
+						this.setState({
+							selectedTab: 'redTab',
+						});
 					}}
 					data-seed="logId1"
 				>
-				<Route path="/" component={Products} />
+					<Route path="/" component={Products} />
 				</TabBar.Item>
 				<TabBar.Item
 					icon={
-					<div style={{
-						width: '22px',
-						height: '22px',
-						background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  21px 21px no-repeat' }}
-					/>
+						<div style={{
+							width: '22px',
+							height: '22px',
+							background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  21px 21px no-repeat' }}
+						/>
 					}
 					selectedIcon={
-					<div style={{
-						width: '22px',
-						height: '22px',
-						background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  21px 21px no-repeat' }}
-					/>
+						<div style={{
+							width: '22px',
+							height: '22px',
+							background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  21px 21px no-repeat' }}
+						/>
 					}
 					title="购物车"
 					key="carts"
 					dot
 					selected={this.state.selectedTab === 'greenTab'}
 					onPress={() => {
-					this.setState({
-						selectedTab: 'greenTab',
-					});
+						this.setState({
+							selectedTab: 'greenTab',
+						});
 					}}
 				>
-				<Route path="/" component={Carts} />
+					<Route path="/" component={Carts} />
 				</TabBar.Item>
 				<TabBar.Item
 					icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
@@ -109,9 +109,9 @@ export default class TabBarExample extends React.Component {
 					key="my"
 					selected={this.state.selectedTab === 'yellowTab'}
 					onPress={() => {
-					this.setState({
-						selectedTab: 'yellowTab',
-					});
+						this.setState({
+							selectedTab: 'yellowTab',
+						});
 					}}
 				>
 				</TabBar.Item>
