@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router,Route,Switch } from 'react-router-dom';
-import { Home,Products,Carts } from './conponents'
+import { HashRouter as Router } from 'react-router-dom';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import 'antd-mobile/dist/antd-mobile.css';
 
 ReactDOM.render(
 	<Router>
-		<Home></Home>
+		<App />
 	</Router>
 	, document.getElementById('root'));
 
